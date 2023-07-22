@@ -1,0 +1,28 @@
+
+
+.flag {
+    border: 1px solid black;
+    width: var(--flag-width);
+    height: var(--flag-height);
+    position: relative;
+}
+
+.white {
+    width: var(--flag-width);
+    height: calc(var(--flag-height)/2);
+    background-color: var(--color-top);
+    position: absolute;
+}
+
+.red {
+    width: var(--flag-width);
+    height: calc(var(--flag-height)/2);
+    background-color: var(--color-bottom);
+    position: absolute;
+    top: calc(var(--flag-height)/2);
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}

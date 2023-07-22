@@ -1,0 +1,32 @@
+:root {
+    --flag-height: 500px;
+    --flag-width: 900px;
+    --circle-size: 250px;
+}
+
+.flag {
+    width: var(--flag-width);
+    height: var(--flag-height);
+    background-color: whitesmoke;
+    border: 1px solid black;
+    position: relative;
+}
+
+.circle {
+    width: var(--circle-size);
+    aspect-ratio: 1;
+    background-color: darkred;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(var(--flag-height)/2 - var(--circle-size)/2); 
+    left: calc(var(--flag-width)/2 - var(--circle-size)/2);
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.circle p {
+    color: whitesmoke;
+}

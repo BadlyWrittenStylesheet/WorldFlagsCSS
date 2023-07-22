@@ -1,0 +1,43 @@
+:root {
+    --flag-width: 900px;
+    --flag-height: 600px;
+}
+
+.flag {
+    border: 2px solid black;
+    position: relative;
+    width: var(--flag-width);
+    height: var(--flag-height);
+}
+
+.black {
+    height: calc(var(--flag-height)/3);
+    width: var(--flag-width);
+    background-color: hsl(0, 0%, 0%);
+    position: absolute;
+}
+
+.red {
+    height: calc(var(--flag-height)/3);
+    width: var(--flag-width);
+    background-color: hsl(0, 100%, 63%);
+    position: absolute;
+    top: calc(var(--flag-height)/3);
+}
+
+.yellow {
+    height: calc(var(--flag-height)/3);
+    width: var(--flag-width);
+    background-color: hsl(55, 100%, 63%);
+    position: absolute;
+    top: calc(var(--flag-height)/3*2);
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.black, .red > p {
+    color: whitesmoke;
+}

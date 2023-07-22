@@ -1,0 +1,39 @@
+.flag {
+    border: 2px solid black;
+    position: relative;
+    width: 900px;
+    height: 600px;
+}
+
+.blue {
+    width: 300px;
+    height: 600px;
+    background-color: #00008a;
+    position: absolute;
+    
+}
+
+.white {
+    width: 300px;
+    height: 600px;
+    background-color: #f5f5f5;
+    position: absolute;
+    left: 300px;
+}
+
+.red {
+    width: 300px;
+    height: 600px;
+    background-color: #8a0000;
+    position: absolute;
+    left: 600px;
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+div.blue, div.red > p {
+    color: whitesmoke;
+}

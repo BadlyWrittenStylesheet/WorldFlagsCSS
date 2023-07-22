@@ -1,0 +1,38 @@
+:root {
+    --bg-color: hsl(0, 85%, 50%);
+    --cross-color: hsl(0, 0%, 96%);
+    --unit: 10px;
+}
+
+.flag {
+    width: calc(var(--unit)*32);
+    aspect-ratio: 1;
+    /* height: calc(var(--unit)*32); */
+    background-color: var(--bg-color);
+
+    border: 1px solid black;
+    position: relative;
+    top: 20px;
+}
+
+#horizontal {
+    width: calc(var(--unit)*20);
+    height: calc(var(--unit)*6);
+    background-color: var(--cross-color);
+    position: absolute;
+    left: calc(var(--unit)*6);
+    top: calc(var(--unit)*13);
+}
+
+#vertical {
+    width: calc(var(--unit)*6);
+    height: calc(var(--unit)*20);
+    background-color: var(--cross-color);
+    position: absolute;
+    left: calc(var(--unit)*13);
+    top: calc(var(--unit)*6);
+}
+
+#unit-slider {
+    position: absolute;
+}

@@ -1,0 +1,54 @@
+:root {
+    --denmark-bg-color: hsl(0, 60%, 42%);
+    --denmark-cross-color: hsl(0, 0%, 96%);
+    --sweden-bg-color: hsl(220, 90%, 60%);
+    --sweden-cross-color: hsl(50, 80%, 55%);
+    --finland-bg-color: hsl(0, 0%, 96%);
+    --finland-cross-color: hsl(230, 39%, 34%);
+    --unit: 10px;
+}
+
+.flag {
+    width: calc(var(--unit)*37);
+    height: calc(var(--unit)*27);
+    background-color: var(--denmark-bg-color);
+    border: 1px solid black;
+    position: relative;
+}
+
+.horizontal {
+    width: calc(var(--unit)*37);
+    height: calc(var(--unit)*4);
+    background-color: var(--denmark-cross-color);
+    top: calc(var(--unit)*27/2 - var(--unit)*2);
+    position: absolute;
+}
+
+.vertical {
+    width: calc(var(--unit)*4);
+    height: calc(var(--unit)*27);
+    background-color: var(--denmark-cross-color);
+    position: absolute;
+    left: calc(var(--unit)*12);
+}
+
+#sweden:checked ~ .flag {
+    background-color: var(--sweden-bg-color);
+  }
+  
+  #sweden:checked ~ .flag .cross div {
+    background-color: var(--sweden-cross-color);
+  }
+
+  
+#finland:checked ~ .flag {
+    background-color: var(--finland-bg-color);
+  }
+  
+  #finland:checked ~ .flag .cross div {
+    background-color: var(--finland-cross-color);
+  }
+
+label {
+    background-color: var(--finland-bg-color);
+}
