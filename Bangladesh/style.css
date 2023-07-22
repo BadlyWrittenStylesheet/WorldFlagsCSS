@@ -1,22 +1,23 @@
 :root {
-    --flag-width: 900px;
-    --flag-height: 500px;
-    --circle-size: 250px;
+    --unit: 20px;
+    --circle-color: #F42A41;
+    --bg-color: #006A4E;
 }
 
 .flag {
-    width: var(--flag-width);
-    height: var(--flag-height);
-    background-color: hsl(120, 66%, 18%);
+    width: calc(var(--unit)*20);
+    height: calc(var(--unit)*12);
+    background: var(--bg-color);
     position: relative;
+    border: 1px solid black;
 }
 
 .circle {
-    width: var(--circle-size);
+    width: calc(var(--unit)*8);
     aspect-ratio: 1;
-    background-color: hsl(0, 90%, 45%);
+    background-color: var(--circle-color);
     border-radius: 50%;
     position: absolute;
-    top: calc(var(--flag-height) /2 - var(--circle-size )/2);
-    left: calc(var(--flag-width)/2 - var(--circle-size)/1.5);
+    top: calc(var(--unit)*2);
+    left: calc(var(--unit)*5);
 }

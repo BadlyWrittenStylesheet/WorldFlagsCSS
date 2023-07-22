@@ -1,28 +1,28 @@
 :root {
-    --flag-width: 900px;
-    --flag-height: 600px;
-    --color-top: hsl(0, 0%, 96%);
-    --color-bottom: hsl(0, 90%, 56%);
+  --unit: 10px;
+  --top-stripe-color: #ffffff;
+  --btm-stripe-color: #dc143c;
 }
 
 .flag {
-    border: 1px solid black;
-    width: var(--flag-width);
-    height: var(--flag-height);
-    position: relative;
+  width: calc(var(--unit) * 8);
+  height: calc(var(--unit) * 5);
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid black;
 }
 
-.white {
-    width: var(--flag-width);
-    height: calc(var(--flag-height)/2);
-    background-color: var(--color-top);
-    position: absolute;
+.flag > * {
+  width: calc(var(--unit) * 8);
+  height: calc(var(--unit) * 5 / 2);
 }
 
-.red {
-    width: var(--flag-width);
-    height: calc(var(--flag-height)/2);
-    background-color: var(--color-bottom);
-    position: absolute;
-    top: calc(var(--flag-height)/2);
+.top-stripe {
+  background: var(--top-stripe-color);
+}
+
+.btm-stripe {
+  background: var(--btm-stripe-color);
 }
