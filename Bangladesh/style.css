@@ -20,12 +20,3 @@
     top: calc(var(--flag-height) /2 - var(--circle-size )/2);
     left: calc(var(--flag-width)/2 - var(--circle-size)/1.5);
 }
-
-p {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.flag > p {
-    color: whitesmoke;
-}

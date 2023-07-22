@@ -1,4 +1,9 @@
-
+:root {
+    --flag-width: 900px;
+    --flag-height: 600px;
+    --color-top: hsl(0, 0%, 96%);
+    --color-bottom: hsl(0, 90%, 56%);
+}
 
 .flag {
     border: 1px solid black;
@@ -20,9 +25,4 @@
     background-color: var(--color-bottom);
     position: absolute;
     top: calc(var(--flag-height)/2);
-}
-
-p {
-    font-size: 3rem;
-    text-align: center;
 }

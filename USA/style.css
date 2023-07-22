@@ -12,12 +12,12 @@
 
 .red-stripe {
   background: hsl(0, 82%, 42%);
-  outline: 3px dotted hsl(0, 0%, 100%);
+  /* outline: 3px dotted hsl(0, 0%, 100%); */
 }
 /* Out line for sewed like efffect or smh id */
 .white-stripe {
     background: hsl(0, 0%, 100%);
-    outline: 3px dotted hsl(0, 0%, 96%);
+    /* outline: 3px dotted hsl(0, 0%, 96%); */
 }
 
 .stripes > * {
@@ -31,7 +31,7 @@
     width: calc(var(--unit) * 7.6);
     height: calc(var(--unit) * 5.385);
     position: absolute;
-    outline: 3px dotted hsl(212, 100%, 14%);
+    /* outline: 3px dotted hsl(212, 100%, 14%); */
 }
 
 .star-row-6 {

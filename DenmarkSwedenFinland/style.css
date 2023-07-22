@@ -48,7 +48,3 @@
   #finland:checked ~ .flag .cross div {
     background-color: var(--finland-cross-color);
   }
-
-label {
-    background-color: var(--finland-bg-color);
-}

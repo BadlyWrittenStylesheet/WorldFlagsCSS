@@ -28,12 +28,3 @@
     position: absolute;
     left: 600px;
 }
-
-p {
-    font-size: 3rem;
-    text-align: center;
-}
-
-div.blue, div.red > p {
-    color: whitesmoke;
-}
