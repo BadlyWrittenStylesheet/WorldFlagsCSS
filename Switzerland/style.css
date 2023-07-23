@@ -1,6 +1,6 @@
 :root {
-    --bg-color: hsl(0, 85%, 50%);
-    --cross-color: hsl(0, 0%, 96%);
+    --bg-color: #DA291C;
+    --cross-color:#FFFFFF;
     --unit: 10px;
 }
 
