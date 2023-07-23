@@ -1,5 +1,5 @@
 :root {
-  --unit: 100px;
+  --unit: 40px;
   --white-color: #FFFFFF;
   --blue-color: #0A3161;
   --red-color: #b31942;
@@ -14,26 +14,21 @@
 
 .red-stripe {
   background: var(--red-color);
-  /* outline: 3px dotted hsl(0, 0%, 100%); */
 }
-/* Out line for sewed like efffect or smh id */
 .white-stripe {
     background: var(--white-color);
-    /* outline: 3px dotted hsl(0, 0%, 96%); */
 }
 
 .stripes > * {
     width: calc(var(--unit) * 19);
     height: calc(var(--unit) * 0.769);
-    /* outline: 1px solid; */
 }
 
 #star-container {
-    background: hsl(212, 100%, 14%);
+    background: var(--blue-color);
     width: calc(var(--unit) * 7.6);
     height: calc(var(--unit) * 5.385);
     position: absolute;
-    /* outline: 3px dotted hsl(212, 100%, 14%); */
 }
 
 .star-row-6 {
