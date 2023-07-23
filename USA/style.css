@@ -1,7 +1,7 @@
 :root {
   --unit: 40px;
-  --white-color: #FFFFFF;
-  --blue-color: #0A3161;
+  --white-color: #ffffff;
+  --blue-color: #0a3161;
   --red-color: #b31942;
 }
 
@@ -10,48 +10,44 @@
   width: calc(var(--unit) * 19);
   height: calc(var(--unit) * 10);
   position: relative;
-}
-
-.red-stripe {
-  background: var(--red-color);
-}
-.white-stripe {
-    background: var(--white-color);
-}
-
-.stripes > * {
-    width: calc(var(--unit) * 19);
-    height: calc(var(--unit) * 0.769);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--red-color),
+    var(--red-color) calc(1 / 13 * 100%),
+    var(--white-color) calc(1 / 13 * 100%),
+    var(--white-color) calc(2 / 13 * 100%)
+  ); /* this gradient instead of the 13 separate div i made the other flags without
+  gradients because was training some properties but decided to scratch that in this flag*/
 }
 
 #star-container {
-    background: var(--blue-color);
-    width: calc(var(--unit) * 7.6);
-    height: calc(var(--unit) * 5.385);
-    position: absolute;
+  background: var(--blue-color);
+  width: calc(var(--unit) * 7.6);
+  height: calc(var(--unit) * 5.385);
+  position: absolute;
 }
 
 .star-row-6 {
   display: flex;
   justify-content: space-between;
-  margin-top: calc(var(--unit)/5);
-  margin: calc(var(--unit)/3) calc(var(--unit)/3);
+  margin-top: calc(var(--unit) / 5);
+  margin: calc(var(--unit) / 3) calc(var(--unit) / 3);
 }
 
 .star-row-5 {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: calc(var(--unit)/5);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: calc(var(--unit) / 5);
 }
 
-/* Star Css Not Mine :( */
+/* Star CSS Not Mine :( */
 
 .star {
-  font-size: calc(var(--unit) * 0.316); /* wrong size but idk */
+  font-size: calc(var(--unit) * 0.316);
   position: relative;
   display: block;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-right: 1em solid transparent;
   border-bottom: 0.7em solid var(--white-color);
   border-left: 1em solid transparent;
