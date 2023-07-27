@@ -1,5 +1,5 @@
 :root {
-  --unit: 40px;
+  --unit: 80px;
   --white-color: #ffffff;
   --blue-color: #0a3161;
   --red-color: #b31942;
@@ -17,10 +17,15 @@
     var(--white-color) calc(1 / 13 * 100%),
     var(--white-color) calc(2 / 13 * 100%)
   ); /* this gradient instead of the 13 separate div i made the other flags without
-  gradients because was training some properties but decided to scratch that in this flag*/
+  gradients because was training some properties but thats a lot of divs and efficiency*/
 }
 
 #star-container {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-wrap: nowrap; */
+
   background: var(--blue-color);
   width: calc(var(--unit) * 7.6);
   height: calc(var(--unit) * 5.385);
@@ -30,17 +35,23 @@
 .star-row-6 {
   display: flex;
   justify-content: space-between;
-  margin-top: calc(var(--unit) / 5);
+
+  /* margin-top: calc(var(--unit) / 5); */
   margin: calc(var(--unit) / 3) calc(var(--unit) / 3);
 }
 
+
+/* The 5 star rows are stretched to fix can use
+  margin: calc(0.3*var(--unit));
+  but very messsy solution so do not reccomend  */
 .star-row-5 {
   display: flex;
   justify-content: space-evenly;
   margin-top: calc(var(--unit) / 5);
 }
 
-/* Star CSS Not Mine :( */
+
+/* Star CSS Not Mine */
 
 .star {
   font-size: calc(var(--unit) * 0.316);
