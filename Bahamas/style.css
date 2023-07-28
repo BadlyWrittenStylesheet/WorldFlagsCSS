@@ -1,0 +1,44 @@
+:root {
+  --unit: 50px;
+  --blue-color: #00a9ce;
+  --yellow-color: #fdda25;
+  --black-color: #000000;
+}
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.flag {
+  position: relative;
+  width: calc(10 * var(--unit));
+  height: calc(5 * var(--unit));
+  border: 1px solid black;
+  background-image: linear-gradient(
+    to bottom,
+    var(--blue-color),
+    var(--blue-color) 33%,
+    var(--yellow-color) 33%,
+    var(--yellow-color) 67%,
+    var(--blue-color) 67%
+  );
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: calc(var(--unit) * 5 / 2) solid transparent;
+  border-right: calc(var(--unit) * 5 / 2) solid transparent;
+  border-bottom: calc(var(--unit) * 5 * 1.732 / 2) solid var(--black-color); /* tan(60) * base (5 * --unit) = (5 * --unit * √3) */
+  transform: rotate(90deg);
+  position: absolute;
+  top: 17px;
+  left: -17px;
+}
+
