@@ -1,0 +1,21 @@
+:root {
+  --unit: 200px;
+  --red-color: #a4343a;
+  --white-color: #ffffff;
+}
+
+.flag {
+  width: calc(var(--unit) * 2);
+  height: var(--unit);
+
+  border: 1px solid black;
+
+  background-image: linear-gradient(
+    var(--red-color),
+    var(--red-color) 40%,
+    var(--white-color) 40%,
+    var(--white-color) 60%,
+    var(--red-color) 60%,
+    var(--red-color)
+  );
+}
