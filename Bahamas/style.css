@@ -4,16 +4,7 @@
   --yellow-color: #fdda25;
   --black-color: #000000;
 }
-body {
-  height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 0;
-  padding: 0;
-}
 
 .flag {
   position: relative;
@@ -33,12 +24,9 @@ body {
 .triangle {
   width: 0;
   height: 0;
-  border-left: calc(var(--unit) * 5 / 2) solid transparent;
-  border-right: calc(var(--unit) * 5 / 2) solid transparent;
-  border-bottom: calc(var(--unit) * 5 * 1.732 / 2) solid var(--black-color); /* tan(60) * base (5 * --unit) = (5 * --unit * √3) */
-  transform: rotate(90deg);
+  border-top: calc(var(--unit) * 5 / 2) solid transparent;
+  border-bottom: calc(var(--unit) * 5 / 2) solid transparent;
+  border-left: calc(var(--unit) * 5 * 1.732 / 2) solid var(--black-color); /* tan(60) * base (5 * --unit) = (5 * --unit * √3) */
   position: absolute;
-  top: 17px;
-  left: -17px;
 }
 

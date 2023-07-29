@@ -5,17 +5,6 @@
     --red-color: #D7141A;
 }
 
-body {
-    height: 100vh;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    margin: 0;
-    padding: 0;
-  }
-
 .flag {
     position: relative;
     width: calc(var(--unit)*3);
@@ -32,11 +21,8 @@ body {
 .triangle {
     width: 0px;
     height: 0px;
-    border-left: var(--unit) solid transparent;
-    border-right: var(--unit) solid transparent;
-    border-bottom: calc(var(--unit)*3/2) solid var(--blue-color);
-    transform: rotate(90deg);
+    border-top: var(--unit) solid transparent;
+    border-bottom: var(--unit) solid transparent;
+    border-left: calc(var(--unit)*3/2) solid var(--blue-color);
     position: absolute;
-    top: 25px;
-    left: -25px;
 }

@@ -1,0 +1,81 @@
+:root {
+  --unit: 15px;
+  --red-color: #e03c31;
+  --white-color: #ffffff;
+  --green-color: #007749;
+  --blue-color: #001489;
+  --yellow-color: #ffb81c;
+  --black-color: #000000;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  width: calc(var(--unit) * 45);
+  height: calc(var(--unit) * 30);
+
+  /* border: 1px solid black; */
+  background: var(--green-color);
+}
+
+.black-triangle {
+  width: 0px;
+  height: 0px;
+
+  z-index: 1;
+
+  border-left: calc(var(--unit) * 13.5) solid var(--black-color);
+  border-top: calc(var(--unit) * 9) solid transparent;
+  border-bottom: calc(var(--unit) * 9) solid transparent;
+  /* outline: 1px solid; */
+}
+
+.yellow-triangle {
+  width: 0;
+  height: 0;
+
+  border-left: calc(var(--unit) * 17.1) solid var(--yellow-color);
+  border-top: calc(var(--unit) * 11.4) solid transparent;
+  border-bottom: calc(var(--unit) * 11.4) solid transparent;
+  position: absolute;
+  /* outline: 1px solid; */
+}
+
+.stripes {
+  display: flex;
+  justify-content: flex-end;
+  
+  width: calc(var(--unit)*39.6);
+  height: calc(var(--unit)*30);
+
+  /* outline: 1px solid; */
+
+}
+
+.red-blue {
+  width: calc(var(--unit) * 21);
+  height: calc(var(--unit) * 10);
+
+  position: absolute;
+
+  z-index: 1;
+
+  border-bottom: calc(var(--unit) * 10) solid var(--blue-color);
+  border-top: calc(var(--unit) * 10) solid var(--red-color);
+  border-left: calc(var(--unit) * 15) solid transparent;
+
+  /* outline: 1px solid; */
+}
+
+.white-lines {
+  width: calc(var(--unit) * 21.6);
+  height: calc(var(--unit) * 6);
+
+  position: absolute;
+
+  border-bottom: calc(var(--unit)*12) solid var(--white-color);
+  border-top: calc(var(--unit)*12) solid var(--white-color);
+  border-left: calc(var(--unit)*18) solid transparent;
+
+  /* outline: 1px solid; */
+}
