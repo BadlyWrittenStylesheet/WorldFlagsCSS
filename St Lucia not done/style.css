@@ -1,0 +1,24 @@
+:root {
+  --unit: 15px;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   width: calc(var(--unit)*72); 
+   height: calc(var(--unit)*36);
+
+   border: 1px solid black;
+}
+
+.id {
+    width: 100px;
+    height: 10px;
+
+    background-color: aqua;
+
+    border-left: calc(var(--unit)*12) solid;
+    border-right: calc(var(--unit)*12) solid;
+}
