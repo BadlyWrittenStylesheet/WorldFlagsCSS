@@ -1,24 +1,75 @@
 :root {
-  --unit: 15px;
+  --unit: 6px;
+  --blue-color: #66CCFF;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --yellow-color: #FCD116;
 }
 
 .flag {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+
+    position: relative;
 
    width: calc(var(--unit)*72); 
    height: calc(var(--unit)*36);
 
+   background: var(--blue-color);
+
    border: 1px solid black;
 }
 
-.id {
-    width: 100px;
-    height: 10px;
+.yellow {
+    width: 0;
+    height: 0;
 
-    background-color: aqua;
+    z-index: 2;
 
-    border-left: calc(var(--unit)*12) solid;
-    border-right: calc(var(--unit)*12) solid;
+    align-self: center;
+    position: absolute;
+
+    border-left: calc(var(--unit)*12) solid transparent;
+    border-right: calc(var(--unit)*12) solid transparent;
+    border-bottom: calc(var(--unit)*7.4161984871 * 2) solid var(--yellow-color); /* 2 * sqrt(55) */
+    border-top: calc(var(--unit)*7.4161984871 * 2) solid transparent; /* center with flex affected by border so yeah */
 }
+
+.white {
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: calc(var(--unit) * (18 - (7.4161984871 * 2)));
+
+  border-left: calc(var(--unit)*12) solid transparent;
+  border-right: calc(var(--unit)*12) solid transparent;
+  border-bottom: calc(var(--unit)*7.4161984871 * 4) solid var(--white-color); /* 2 * sqrt(55) */
+}
+
+.black {
+  width: 0;
+  height: 0;
+
+  z-index: 1;
+
+  position: absolute;
+  top: calc(var(--unit) * (18 - (7.4161984871 * 2)));
+
+  border-left: calc(var(--unit)*12) solid transparent;
+  border-right: calc(var(--unit)*12) solid transparent;
+  border-bottom: calc(var(--unit)*7.4161984871 * 4) solid var(--black-color); /* 2 * sqrt(55) */
+}
+/* 
+.black-container {
+  width: calc(var(--unit)*24);
+  height: calc(var(--unit)*7.4161984871 * 4);
+
+  top: calc(var(--unit) * ((18 - 7.4161984871 * 2) + 4));
+  position: absolute;
+
+  overflow: hidden;
+
+  border: 1px solid red;
+} */

@@ -1,6 +1,6 @@
-const whiteTriangle = document.getElementById("white");
-const unit = getComputedStyle(root).getPropertyValue("--unit");
+// const whiteTriangle = document.getElementById("white");
+// const unit = getComputedStyle(root).getPropertyValue("--unit");
 
-const whiteBottomBorder = parseFloat(unit) * Math.sqrt(55);
+// const whiteBottomBorder = parseFloat(unit) * Math.sqrt(55);
 
-whiteTriangle.style.setProperty("--border-bottom", `${whiteBottomBorder}px solid`);
+// whiteTriangle.style.setProperty("--border-bottom", `${whiteBottomBorder}px solid`);
