@@ -1,0 +1,46 @@
+:root {
+  --unit: 30px;
+  --blue-color: #001489;
+  --white-color: #ffffff;
+}
+
+.flag {
+  width: calc(var(--unit) * 27);
+  height: calc(var(--unit) * 18);
+
+  background-image: repeating-linear-gradient(
+    var(--blue-color),
+    var(--blue-color) calc(var(--unit) * 2),
+    var(--white-color) calc(var(--unit) * 2),
+    var(--white-color) calc(var(--unit) * 4)
+  );
+
+  border: 1px solid black;
+}
+
+.cross {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: calc(var(--unit) * 10);
+  height: calc(var(--unit) * 10);
+
+  background: var(--blue-color);
+}
+
+.horizontal {
+  width: calc(var(--unit) * 2);
+  height: calc(var(--unit) * 10);
+
+  position: absolute;
+
+  background: var(--white-color);
+}
+
+.vertical {
+  width: calc(var(--unit) * 10);
+  height: calc(var(--unit) * 2);
+
+  background: var(--white-color);
+}
