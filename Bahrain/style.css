@@ -1,0 +1,46 @@
+:root {
+  --unit: 8px;
+  --red-color: #ce1126;
+  --white-color: #ffffff;
+}
+
+.flag {
+  width: calc(var(--unit) * 100);
+  height: calc(var(--unit) * 60);
+  position: relative;
+
+  background-image: linear-gradient(
+    to right,
+    var(--white-color),
+    var(--white-color) 25%,
+    var(--red-color) 25%,
+    var(--red-color)
+  );
+
+  border: 1px solid;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  left: calc(var(--unit) * 25);
+
+  border-left: calc(var(--unit) * 15) solid var(--white-color);
+  border-top: calc(var(--unit) * 6) solid transparent;
+  border-bottom: calc(var(--unit) * 6) solid transparent;
+}
+
+.t2 {
+  top: calc(var(--unit)*12);
+}
+.t3 {
+  top: calc(var(--unit)*24);
+}
+.t4 {
+  top: calc(var(--unit)*36);
+}
+.t5 {
+  top: calc(var(--unit)*48);
+}
